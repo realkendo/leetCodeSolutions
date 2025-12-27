@@ -1,1 +1,1 @@
-This is repo containing all solutions to leetcode problems that i have solved and understood to develop my critical thinking in Javascript (Typescript eventualy) and my problem solving abilities
+This is a repo containing all solutions to leetcode problems that i have solved and understood to develop my critical thinking in Javascript (Typescript and others eventualy) and also to improve my problem solving abilities in programming

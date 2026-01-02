@@ -13,3 +13,4 @@ const twoSumFunction = (inputArray, inputTarget) => {
 };
 exports.twoSumFunction = twoSumFunction;
 console.log((0, exports.twoSumFunction)([3, 4, 5], 8));
+//# sourceMappingURL=_1_twoSum.js.map

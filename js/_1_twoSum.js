@@ -31,3 +31,15 @@ const tar = 7;
 console.log(twoSum(arr, tar));
 
 // the above solution has a bigO complexity of O(n^2) because fo the loop inside of a loop
+
+const twoSumRevised = (arrayInput, targetInput) => {
+  for (let i = 0; i < arrayInput.length; i++) {
+    for (let j = i + 1; j < arrayInput.length; j++) {
+      if (arrayInput[j] + arrayInput[i] === targetInput) {
+        return [i, j];
+      }
+    }
+  }
+};
+
+console.log(twoSumRevised([2, 4, 5, 6], 8));

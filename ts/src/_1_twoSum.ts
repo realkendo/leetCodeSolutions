@@ -13,3 +13,23 @@ export const twoSumFunction = (inputArray : number[], inputTarget: number) : num
 }
 
 console.log(twoSumFunction([3,4,5],8));
+
+
+// below is the optimized solution for the two sums eetcode problem, where the time complexity is O(n)
+
+export const twoSumFunctionOptimized = (arrayNums : number[], targetNum: number) : number [] =>{
+  let seen: Record<number, number> = {}
+
+  for(let i = 0; i < arrayNums.length; i++){
+    const complement = targetNum - arrayNums[i];
+
+    if(seen[complement] !== undefined){
+      return [seen[complement], i]
+    }
+    seen[arrayNums[i]] = i;
+  }
+
+  return[];
+}
+
+  console.log(twoSumFunctionOptimized([3,4,5],8));
